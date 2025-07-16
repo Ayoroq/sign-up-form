@@ -6,6 +6,7 @@ body {
   font-family: "Cormorant Infant", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  --white-colour: white;
 }
 
 button,
@@ -39,7 +40,7 @@ header .container {
 }
 
 header .container p {
-  color: white;
+  color: var(--white-colour);
   font-size: 3rem;
   font-weight: bolder;
 }
@@ -57,13 +58,13 @@ header .container p {
   flex: 1;
 }
 
-h3 {
+h1 {
   font-size: xx-large;
 }
-h4 {
+h2 {
   font-size: x-large;
 }
-h5 {
+h3 {
   font-size: large;
 }
 
@@ -104,7 +105,7 @@ main {
   align-items: flex-start;
   gap: 20px;
   border: none;
-  background-color: white;
+  background-color: var(--white-colour);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
   font-size: small;
   font-weight: bold;
@@ -120,7 +121,7 @@ legend {
 
 .fieldset-container {
   display: flex;
-  background-color: white;
+  background-color: var(--white-colour);
   gap: 50px;
 }
 
@@ -153,7 +154,44 @@ button {
   border: none;
   background-color: #b4825c;
   margin-bottom: 20px;
-  color: white;
-  font-weight: bold;
+  color: var(--white-colour);
+  font-weight: bolder;
   font-size: small;
+}
+
+button:hover {
+  background-color: #61381d;
+  cursor: pointer;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #b4825c;
+}
+
+
+.button-container{
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  
+  header {
+    width: 100%;
+    height: 200px;
+  }
+  
+  main {
+    width: 100%;
+  }
+  
+  .fieldset-container {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

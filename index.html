@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up Page</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,15 +16,15 @@
   <body>
     <header>
       <div class="container">
-        <img src="plant.svg" alt="this is the plant logo" class="logo">
+        <img src="plant.svg" alt="this is the plant logo" class="logo" />
         <p>Roots</p>
       </div>
     </header>
     <main>
       <section class="form-intro">
-        <h3>Welcome to Roots!</h3>
-        <h4>Your home for happy plants and greener spaces.</h4>
-        <h5>Create your free account to:</h5>
+        <h1>Welcome to Roots!</h1>
+        <h2>Your home for happy plants and greener spaces.</h2>
+        <h3>Create your free account to:</h3>
         <ul>
           <li>🌱 Get exclusive deals on indoor & outdoor plants</li>
           <li>🪴 Track your plant care schedule</li>
@@ -40,7 +40,7 @@
           <div class="fieldset-container">
             <p>
               <label for="first-name">FIRST NAME</label>
-              <input
+              <input aria-label="First Name"
                 type="text"
                 id="first-name"
                 name="first-name"
@@ -50,7 +50,7 @@
             </p>
             <p>
               <label for="last-name">LAST NAME</label>
-              <input
+              <input aria-label="Last Name"
                 type="text"
                 id="last-name"
                 name="last-name"
@@ -62,7 +62,7 @@
           <div class="fieldset-container">
             <p>
               <label for="email">EMAIL</label>
-              <input
+              <input aria-label="Email"
                 type="email"
                 id="email"
                 name="email"
@@ -72,7 +72,7 @@
             </p>
             <p>
               <label for="phone">PHONE NUMBER</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" />
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="e.g., 123-456-7890"/>
             </p>
           </div>
           <div class="fieldset-container">
@@ -89,7 +89,7 @@
             </p>
             <p>
               <label for="confirm-password">CONFIRM PASSWORD</label>
-              <input
+              <input aria-label="Confirm Password"
                 type="password"
                 id="confirm-password"
                 name="confirm-password"
