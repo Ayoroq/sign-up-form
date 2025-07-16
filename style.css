@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  height: 100vh;
+  background-color: rgb(247, 243, 243);
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-image: url("plant.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40%;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+}
+
+.form {
+  margin-bottom: 100px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.form-intro,
+.fieldset,
+.button-container {
+  padding-left: 30px;
+}
+
+.fieldset {
+  padding-top: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+legend {
+  position: absolute;
+  top: 10px;
+}
+
+.fieldset-container {
+  display: flex;
+  background-color: white;
+  gap: 50px;
+}
+
+.fieldset-container p {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 200px;
+}
+
+button {
+  padding: 8px 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: green;
+  margin-bottom: 20px;
+  color: white;
+}
