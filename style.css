@@ -1,6 +1,6 @@
 body {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(247, 243, 243);
   font-family: "Cormorant Infant", serif;
   font-optical-sizing: auto;
@@ -52,6 +52,10 @@ header .container p {
   gap: 10px;
 }
 
+.form-intro > * {
+  flex: 1;
+}
+
 h3 {
   font-size: xx-large;
 }
@@ -72,7 +76,7 @@ li {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 70%;
 }
 
